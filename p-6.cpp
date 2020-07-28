@@ -7,18 +7,17 @@ int main()
   int n, i,flag=0;  
   cout << "Enter the Number to check Prime: ";  
   cin >> n;    
-  for(i = 2; i <= n/2; i++)  
+  for(i = 1; i <= n; i++)  
   {  
       if(n % i == 0)  
-      {  
-          cout<<"Number is not Prime."<<endl;  
-          flag=1;  
-          break;  
+      {    
+          flag++;   
       }  
   }  
-  if (flag==0)  
-      cout << "Number is Prime."<<endl;  
-      
-	getch();
+  if (flag==2)  
+      cout << "Number is Prime."<<endl;
+ else
+      cout<<"not prime";
+  getch();
   return 0;  
 }  
