@@ -12,13 +12,13 @@ int main()
     gets(s);
     n=strlen(s);
  
-    for(i=0;i<n/2;i++)  
+    for(i=0;i<n;i++)  
     {
-    	if(s[i]==s[n-i-1])
-    	c++;
+    	if(s[i]!=s[n-i-1])
+    	c=1;
  
  	}
- 	if(c==i)
+ 	if(c==0)
  	    cout<<"string is palindrome";
     else
         cout<<"string is not palindrome";
